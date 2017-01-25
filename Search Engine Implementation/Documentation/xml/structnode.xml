@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="structnode" kind="struct" language="C++" prot="public">
+    <compoundname>node</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnode_1a79b31177c413f7066ba1e0e9dc203c05" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string node::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.cpp" line="40" column="1" bodyfile="dictionary.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1a17fe4a03b75213946eda4002d36d45c1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string node::author</definition>
+        <argsstring></argsstring>
+        <name>author</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.cpp" line="41" column="1" bodyfile="dictionary.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1a9e241352faba467dce6ee6a3f32979a1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string node::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.cpp" line="42" column="1" bodyfile="dictionary.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1aef41938c1d67b81199e8f0625f51025a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string node::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.cpp" line="43" column="1" bodyfile="dictionary.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnode_1a3ce953da0e17204565cb4599ca6a584e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string node::link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.cpp" line="44" column="1" bodyfile="dictionary.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dictionary.cpp" line="39" column="1" bodyfile="dictionary.cpp" bodystart="38" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structnode_1a17fe4a03b75213946eda4002d36d45c1" prot="public" virt="non-virtual"><scope>node</scope><name>author</name></member>
+      <member refid="structnode_1aef41938c1d67b81199e8f0625f51025a" prot="public" virt="non-virtual"><scope>node</scope><name>content</name></member>
+      <member refid="structnode_1a9e241352faba467dce6ee6a3f32979a1" prot="public" virt="non-virtual"><scope>node</scope><name>date</name></member>
+      <member refid="structnode_1a3ce953da0e17204565cb4599ca6a584e" prot="public" virt="non-virtual"><scope>node</scope><name>link</name></member>
+      <member refid="structnode_1a79b31177c413f7066ba1e0e9dc203c05" prot="public" virt="non-virtual"><scope>node</scope><name>title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

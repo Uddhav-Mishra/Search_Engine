@@ -1,0 +1,192 @@
+.TH "dictionary.cpp" 3 "Tue Sep 27 2016" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dictionary.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <bits/stdc++\&.h>\fP
+.br
+\fC#include <boost/tokenizer\&.hpp>\fP
+.br
+\fC#include 'stemming\&.cpp'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBnode\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBgetwords\fP (string line, string words[])"
+.br
+.ti -1c
+.RI "int \fBerr\fP (string k)"
+.br
+.ti -1c
+.RI "int \fBorgerr\fP (string k)"
+.br
+.ti -1c
+.RI "int \fBedit_distance\fP (string a, string b)"
+.br
+.ti -1c
+.RI "void \fBstem_the_input_file\fP ()"
+.br
+.ti -1c
+.RI "string \fBstem_the_query\fP (string query)"
+.br
+.ti -1c
+.RI "int \fBcreate_structure_of_original_words\fP ()"
+.br
+.ti -1c
+.RI "int \fBcreate_structure_of_stemmed_words\fP ()"
+.br
+.ti -1c
+.RI "void \fBmake_dictionary_stemmed_words\fP ()"
+.br
+.ti -1c
+.RI "void \fBmake_dictionary_original_words\fP ()"
+.br
+.ti -1c
+.RI "void \fBget_suggestions\fP (string query)"
+.br
+.ti -1c
+.RI "void \fBget_boolean_retrieval\fP (string query)"
+.br
+.ti -1c
+.RI "void \fBtf_idf_ranking\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "map< string, map< int, int > > \fBdict\fP"
+.br
+.ti -1c
+.RI "map< string, map< int, int > > \fBorgdict\fP"
+.br
+.ti -1c
+.RI "vector< int > \fBans\fP"
+.br
+.ti -1c
+.RI "int \fBdocid\fP"
+.br
+.ti -1c
+.RI "map< string, map< int, int > >::iterator \fBitr\fP"
+.br
+.ti -1c
+.RI "map< string, map< int, int > >::iterator \fBitrr\fP"
+.br
+.ti -1c
+.RI "map< int, int >::iterator \fBitr1\fP"
+.br
+.ti -1c
+.RI "map< int, int >::iterator \fBitr2\fP"
+.br
+.ti -1c
+.RI "map< string, int > \fBquery_terms\fP"
+.br
+.ti -1c
+.RI "double \fBdoc_score\fP [9000][20]"
+.br
+.ti -1c
+.RI "double \fBquery_score\fP [200]"
+.br
+.ti -1c
+.RI "int \fBdoc_ans\fP [20000]"
+.br
+.ti -1c
+.RI "pair< double, int > \fBp\fP [20000]"
+.br
+.ti -1c
+.RI "string \fBquery_tokens\fP [3000]"
+.br
+.ti -1c
+.RI "string \fBdistinct_terms\fP [100000]"
+.br
+.ti -1c
+.RI "pair< int, string > \fBdist\fP [10][200000]"
+.br
+.ti -1c
+.RI "struct \fBnode\fP \fBdoc\fP [1000000]"
+.br
+.ti -1c
+.RI "struct \fBnode\fP \fBorgdoc\fP [100000]"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int create_structure_of_original_words ()"
+
+.SS "int create_structure_of_stemmed_words ()"
+
+.SS "int edit_distance (string a, string b)"
+
+.SS "int err (string k)"
+
+.SS "void get_boolean_retrieval (string query)"
+
+.SS "void get_suggestions (string query)"
+
+.SS "void getwords (string line, string words[])"
+
+.SS "void make_dictionary_original_words ()"
+
+.SS "void make_dictionary_stemmed_words ()"
+
+.SS "int orgerr (string k)"
+
+.SS "void stem_the_input_file ()"
+
+.SS "string stem_the_query (string query)"
+
+.SS "void tf_idf_ranking ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "vector<int> ans"
+
+.SS "map<string,map<int,int> > dict"
+
+.SS "pair<int,string> dist[10][200000]"
+
+.SS "string distinct_terms[100000]"
+
+.SS "struct \fBnode\fP doc[1000000]"
+
+.SS "int doc_ans[20000]"
+
+.SS "double doc_score[9000][20]"
+
+.SS "int docid"
+
+.SS "map<string,map<int,int> >::iterator itr"
+
+.SS "map<int,int>::iterator itr1"
+
+.SS "map<int,int>::iterator itr2"
+
+.SS "map<string,map<int,int> >::iterator itrr"
+
+.SS "map<string,map<int,int> > orgdict"
+
+.SS "struct \fBnode\fP orgdoc[100000]"
+
+.SS "pair<double,int> p[20000]"
+
+.SS "double query_score[200]"
+
+.SS "map<string,int> query_terms"
+
+.SS "string query_tokens[3000]"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

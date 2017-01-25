@@ -1,0 +1,88 @@
+.TH "stemming.cpp" 3 "Tue Sep 27 2016" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+stemming.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <bits/stdc++\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBstemmer\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTRUE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBFALSE\fP   0"
+.br
+.ti -1c
+.RI "#define \fBINC\fP   50           /* size units in which s is increased */"
+.br
+.ti -1c
+.RI "#define \fBLETTER\fP(ch)   (isupper(ch) || islower(ch))"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "struct \fBstemmer\fP * \fBcreate_stemmer\fP (void)"
+.br
+.ti -1c
+.RI "void \fBfree_stemmer\fP (struct \fBstemmer\fP *z)"
+.br
+.ti -1c
+.RI "int \fBstem\fP (struct \fBstemmer\fP *z, char *b, int k)"
+.br
+.ti -1c
+.RI "void \fBstemfile\fP (struct \fBstemmer\fP *z, FILE *f)"
+.br
+.ti -1c
+.RI "string \fBstemstring\fP (struct \fBstemmer\fP *z, string f)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define FALSE   0"
+
+.SS "#define INC   50           /* size units in which s is increased */"
+
+.SS "#define LETTER(ch)   (isupper(ch) || islower(ch))"
+
+.SS "#define TRUE   1"
+
+.SH "Function Documentation"
+.PP 
+.SS "struct \fBstemmer\fP * create_stemmer (void)"
+
+.SS "void free_stemmer (struct \fBstemmer\fP * z)"
+
+.SS "int stem (struct \fBstemmer\fP * z, char * b, int k)"
+
+.SS "void stemfile (struct \fBstemmer\fP * z, FILE * f)"
+
+.SS "string stemstring (struct \fBstemmer\fP * z, string f)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

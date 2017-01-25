@@ -1,0 +1,97 @@
+\hypertarget{stemming_8cpp}{}\section{stemming.\+cpp File Reference}
+\label{stemming_8cpp}\index{stemming.\+cpp@{stemming.\+cpp}}
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structstemmer}{stemmer}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stemming_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+UE}~1
+\item 
+\#define \hyperlink{stemming_8cpp_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE}~0
+\item 
+\#define \hyperlink{stemming_8cpp_af735670d9b1cd3dfa2d927db387f7123}{I\+NC}~50           /$\ast$ size units in which s is increased $\ast$/
+\item 
+\#define \hyperlink{stemming_8cpp_a41e26001c91e6d127101f7086fa317a7}{L\+E\+T\+T\+ER}(ch)~(isupper(ch) $\vert$$\vert$ islower(ch))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structstemmer}{stemmer} $\ast$ \hyperlink{stemming_8cpp_aaf7655b3d00411800055563fdefcf43e}{create\+\_\+stemmer} (void)
+\item 
+void \hyperlink{stemming_8cpp_a23018baae747f0d163da2a2b7fe91ac1}{free\+\_\+stemmer} (struct \hyperlink{structstemmer}{stemmer} $\ast$z)
+\item 
+int \hyperlink{stemming_8cpp_a9adc1c124ef5b0c5a0ebee4f5c7c60d9}{stem} (struct \hyperlink{structstemmer}{stemmer} $\ast$z, char $\ast$b, int k)
+\item 
+void \hyperlink{stemming_8cpp_ace84d1929c729aba783d284e05952f7f}{stemfile} (struct \hyperlink{structstemmer}{stemmer} $\ast$z, F\+I\+LE $\ast$f)
+\item 
+string \hyperlink{stemming_8cpp_a554aac5597c2ca775a8e32704d65199d}{stemstring} (struct \hyperlink{structstemmer}{stemmer} $\ast$z, string f)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{stemming_8cpp_aa93f0eb578d23995850d61f7d61c55c1}{}\label{stemming_8cpp_aa93f0eb578d23995850d61f7d61c55c1} 
+\index{stemming.\+cpp@{stemming.\+cpp}!F\+A\+L\+SE@{F\+A\+L\+SE}}
+\index{F\+A\+L\+SE@{F\+A\+L\+SE}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{F\+A\+L\+SE}{FALSE}}
+{\footnotesize\ttfamily \#define F\+A\+L\+SE~0}
+
+\hypertarget{stemming_8cpp_af735670d9b1cd3dfa2d927db387f7123}{}\label{stemming_8cpp_af735670d9b1cd3dfa2d927db387f7123} 
+\index{stemming.\+cpp@{stemming.\+cpp}!I\+NC@{I\+NC}}
+\index{I\+NC@{I\+NC}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{I\+NC}{INC}}
+{\footnotesize\ttfamily \#define I\+NC~50           /$\ast$ size units in which s is increased $\ast$/}
+
+\hypertarget{stemming_8cpp_a41e26001c91e6d127101f7086fa317a7}{}\label{stemming_8cpp_a41e26001c91e6d127101f7086fa317a7} 
+\index{stemming.\+cpp@{stemming.\+cpp}!L\+E\+T\+T\+ER@{L\+E\+T\+T\+ER}}
+\index{L\+E\+T\+T\+ER@{L\+E\+T\+T\+ER}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{L\+E\+T\+T\+ER}{LETTER}}
+{\footnotesize\ttfamily \#define L\+E\+T\+T\+ER(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})~(isupper(ch) $\vert$$\vert$ islower(ch))}
+
+\hypertarget{stemming_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d}{}\label{stemming_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d} 
+\index{stemming.\+cpp@{stemming.\+cpp}!T\+R\+UE@{T\+R\+UE}}
+\index{T\+R\+UE@{T\+R\+UE}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{T\+R\+UE}{TRUE}}
+{\footnotesize\ttfamily \#define T\+R\+UE~1}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{stemming_8cpp_aaf7655b3d00411800055563fdefcf43e}{}\label{stemming_8cpp_aaf7655b3d00411800055563fdefcf43e} 
+\index{stemming.\+cpp@{stemming.\+cpp}!create\+\_\+stemmer@{create\+\_\+stemmer}}
+\index{create\+\_\+stemmer@{create\+\_\+stemmer}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+stemmer()}{create\_stemmer()}}
+{\footnotesize\ttfamily struct \hyperlink{structstemmer}{stemmer} $\ast$ create\+\_\+stemmer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\hypertarget{stemming_8cpp_a23018baae747f0d163da2a2b7fe91ac1}{}\label{stemming_8cpp_a23018baae747f0d163da2a2b7fe91ac1} 
+\index{stemming.\+cpp@{stemming.\+cpp}!free\+\_\+stemmer@{free\+\_\+stemmer}}
+\index{free\+\_\+stemmer@{free\+\_\+stemmer}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{free\+\_\+stemmer()}{free\_stemmer()}}
+{\footnotesize\ttfamily void free\+\_\+stemmer (\begin{DoxyParamCaption}\item[{struct \hyperlink{structstemmer}{stemmer} $\ast$}]{z }\end{DoxyParamCaption})}
+
+\hypertarget{stemming_8cpp_a9adc1c124ef5b0c5a0ebee4f5c7c60d9}{}\label{stemming_8cpp_a9adc1c124ef5b0c5a0ebee4f5c7c60d9} 
+\index{stemming.\+cpp@{stemming.\+cpp}!stem@{stem}}
+\index{stem@{stem}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{stem()}{stem()}}
+{\footnotesize\ttfamily int stem (\begin{DoxyParamCaption}\item[{struct \hyperlink{structstemmer}{stemmer} $\ast$}]{z,  }\item[{char $\ast$}]{b,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\hypertarget{stemming_8cpp_ace84d1929c729aba783d284e05952f7f}{}\label{stemming_8cpp_ace84d1929c729aba783d284e05952f7f} 
+\index{stemming.\+cpp@{stemming.\+cpp}!stemfile@{stemfile}}
+\index{stemfile@{stemfile}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{stemfile()}{stemfile()}}
+{\footnotesize\ttfamily void stemfile (\begin{DoxyParamCaption}\item[{struct \hyperlink{structstemmer}{stemmer} $\ast$}]{z,  }\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+\hypertarget{stemming_8cpp_a554aac5597c2ca775a8e32704d65199d}{}\label{stemming_8cpp_a554aac5597c2ca775a8e32704d65199d} 
+\index{stemming.\+cpp@{stemming.\+cpp}!stemstring@{stemstring}}
+\index{stemstring@{stemstring}!stemming.\+cpp@{stemming.\+cpp}}
+\subsubsection{\texorpdfstring{stemstring()}{stemstring()}}
+{\footnotesize\ttfamily string stemstring (\begin{DoxyParamCaption}\item[{struct \hyperlink{structstemmer}{stemmer} $\ast$}]{z,  }\item[{string}]{f }\end{DoxyParamCaption})}
+

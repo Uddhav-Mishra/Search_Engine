@@ -1,0 +1,270 @@
+\hypertarget{dictionary_8cpp}{}\section{dictionary.\+cpp File Reference}
+\label{dictionary_8cpp}\index{dictionary.\+cpp@{dictionary.\+cpp}}
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+{\ttfamily \#include $<$boost/tokenizer.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}stemming.\+cpp\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnode}{node}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{dictionary_8cpp_a856447ae8050c9b4d3c1f946307c54b9}{getwords} (string line, string words\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{dictionary_8cpp_a5005743b111d21dabde7569642a9b495}{err} (string k)
+\item 
+int \hyperlink{dictionary_8cpp_a9df82f7ca67d016bd9719463d65f4a66}{orgerr} (string k)
+\item 
+int \hyperlink{dictionary_8cpp_ab9d1d0ddc7bd56299d7163195e81a3fd}{edit\+\_\+distance} (string a, string b)
+\item 
+void \hyperlink{dictionary_8cpp_ad727cb6b3ca06b9173bc40df3fc21706}{stem\+\_\+the\+\_\+input\+\_\+file} ()
+\item 
+string \hyperlink{dictionary_8cpp_a05e1e97e5f543cefa8b19b0b5ac090b3}{stem\+\_\+the\+\_\+query} (string query)
+\item 
+int \hyperlink{dictionary_8cpp_a305f57fd494d8bccd87874a95251b5df}{create\+\_\+structure\+\_\+of\+\_\+original\+\_\+words} ()
+\item 
+int \hyperlink{dictionary_8cpp_ac264115b0f55b09315e717ed428575b8}{create\+\_\+structure\+\_\+of\+\_\+stemmed\+\_\+words} ()
+\item 
+void \hyperlink{dictionary_8cpp_acf2143f8dd74c98984bb9b683bbde956}{make\+\_\+dictionary\+\_\+stemmed\+\_\+words} ()
+\item 
+void \hyperlink{dictionary_8cpp_a8f275d2dcbc468ff3af350d9a88a57e0}{make\+\_\+dictionary\+\_\+original\+\_\+words} ()
+\item 
+void \hyperlink{dictionary_8cpp_a6ae3433b8925a45ec6a8a28007047995}{get\+\_\+suggestions} (string query)
+\item 
+void \hyperlink{dictionary_8cpp_a527d8fd487a52b907fc90f822c90d743}{get\+\_\+boolean\+\_\+retrieval} (string query)
+\item 
+void \hyperlink{dictionary_8cpp_a8a0994b8edc637d52d6a5d09e5aeda3b}{tf\+\_\+idf\+\_\+ranking} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, map$<$ int, int $>$ $>$ \hyperlink{dictionary_8cpp_a7faeb828b73155aea22f80f04e31c431}{dict}
+\item 
+map$<$ string, map$<$ int, int $>$ $>$ \hyperlink{dictionary_8cpp_aa0996c94be9cea8b36ad5b45491ffa04}{orgdict}
+\item 
+vector$<$ int $>$ \hyperlink{dictionary_8cpp_a979d82a104752ab2b08fb304cf3e9fe2}{ans}
+\item 
+int \hyperlink{dictionary_8cpp_ad95bf3fc4f49547745530b4d7dc9712a}{docid}
+\item 
+map$<$ string, map$<$ int, int $>$ $>$\+::iterator \hyperlink{dictionary_8cpp_a85c25a4eaa3e2e3fd4b4d7137ca51fc3}{itr}
+\item 
+map$<$ string, map$<$ int, int $>$ $>$\+::iterator \hyperlink{dictionary_8cpp_abf0dcd0d74ec1efb272ae6883f212667}{itrr}
+\item 
+map$<$ int, int $>$\+::iterator \hyperlink{dictionary_8cpp_ab62ad68b1732ef0d399185886945cf96}{itr1}
+\item 
+map$<$ int, int $>$\+::iterator \hyperlink{dictionary_8cpp_af80b58eff2f128843cb420b10fe56b82}{itr2}
+\item 
+map$<$ string, int $>$ \hyperlink{dictionary_8cpp_aff00d28495a02022481432203029bbe1}{query\+\_\+terms}
+\item 
+double \hyperlink{dictionary_8cpp_ac6425beac2b9073e245dc7e1088ca8ef}{doc\+\_\+score} \mbox{[}9000\mbox{]}\mbox{[}20\mbox{]}
+\item 
+double \hyperlink{dictionary_8cpp_a90261c48ac72491fc8eb0ecaf38fedad}{query\+\_\+score} \mbox{[}200\mbox{]}
+\item 
+int \hyperlink{dictionary_8cpp_aeffd2cecd3d2d33547a68ad5221d193c}{doc\+\_\+ans} \mbox{[}20000\mbox{]}
+\item 
+pair$<$ double, int $>$ \hyperlink{dictionary_8cpp_ae77dbdc6c0981f6d3d8a4af1b1586fcc}{p} \mbox{[}20000\mbox{]}
+\item 
+string \hyperlink{dictionary_8cpp_aaf40b01a1e39c61528ec1d7e7e10d35b}{query\+\_\+tokens} \mbox{[}3000\mbox{]}
+\item 
+string \hyperlink{dictionary_8cpp_a5f3ed060f31a8e67afc3a2bbe7111b1f}{distinct\+\_\+terms} \mbox{[}100000\mbox{]}
+\item 
+pair$<$ int, string $>$ \hyperlink{dictionary_8cpp_a1a67417c20ca294bb9bdc7f567055e89}{dist} \mbox{[}10\mbox{]}\mbox{[}200000\mbox{]}
+\item 
+struct \hyperlink{structnode}{node} \hyperlink{dictionary_8cpp_a245e1b893b727f3a54602e22dc431668}{doc} \mbox{[}1000000\mbox{]}
+\item 
+struct \hyperlink{structnode}{node} \hyperlink{dictionary_8cpp_a83ff2fe2ecd7287af5b47fd76c075b9f}{orgdoc} \mbox{[}100000\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{dictionary_8cpp_a305f57fd494d8bccd87874a95251b5df}{}\label{dictionary_8cpp_a305f57fd494d8bccd87874a95251b5df} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!create\+\_\+structure\+\_\+of\+\_\+original\+\_\+words@{create\+\_\+structure\+\_\+of\+\_\+original\+\_\+words}}
+\index{create\+\_\+structure\+\_\+of\+\_\+original\+\_\+words@{create\+\_\+structure\+\_\+of\+\_\+original\+\_\+words}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+structure\+\_\+of\+\_\+original\+\_\+words()}{create\_structure\_of\_original\_words()}}
+{\footnotesize\ttfamily int create\+\_\+structure\+\_\+of\+\_\+original\+\_\+words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_ac264115b0f55b09315e717ed428575b8}{}\label{dictionary_8cpp_ac264115b0f55b09315e717ed428575b8} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!create\+\_\+structure\+\_\+of\+\_\+stemmed\+\_\+words@{create\+\_\+structure\+\_\+of\+\_\+stemmed\+\_\+words}}
+\index{create\+\_\+structure\+\_\+of\+\_\+stemmed\+\_\+words@{create\+\_\+structure\+\_\+of\+\_\+stemmed\+\_\+words}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+structure\+\_\+of\+\_\+stemmed\+\_\+words()}{create\_structure\_of\_stemmed\_words()}}
+{\footnotesize\ttfamily int create\+\_\+structure\+\_\+of\+\_\+stemmed\+\_\+words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_ab9d1d0ddc7bd56299d7163195e81a3fd}{}\label{dictionary_8cpp_ab9d1d0ddc7bd56299d7163195e81a3fd} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!edit\+\_\+distance@{edit\+\_\+distance}}
+\index{edit\+\_\+distance@{edit\+\_\+distance}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{edit\+\_\+distance()}{edit\_distance()}}
+{\footnotesize\ttfamily int edit\+\_\+distance (\begin{DoxyParamCaption}\item[{string}]{a,  }\item[{string}]{b }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_a5005743b111d21dabde7569642a9b495}{}\label{dictionary_8cpp_a5005743b111d21dabde7569642a9b495} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!err@{err}}
+\index{err@{err}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{err()}{err()}}
+{\footnotesize\ttfamily int err (\begin{DoxyParamCaption}\item[{string}]{k }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_a527d8fd487a52b907fc90f822c90d743}{}\label{dictionary_8cpp_a527d8fd487a52b907fc90f822c90d743} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!get\+\_\+boolean\+\_\+retrieval@{get\+\_\+boolean\+\_\+retrieval}}
+\index{get\+\_\+boolean\+\_\+retrieval@{get\+\_\+boolean\+\_\+retrieval}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+boolean\+\_\+retrieval()}{get\_boolean\_retrieval()}}
+{\footnotesize\ttfamily void get\+\_\+boolean\+\_\+retrieval (\begin{DoxyParamCaption}\item[{string}]{query }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_a6ae3433b8925a45ec6a8a28007047995}{}\label{dictionary_8cpp_a6ae3433b8925a45ec6a8a28007047995} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!get\+\_\+suggestions@{get\+\_\+suggestions}}
+\index{get\+\_\+suggestions@{get\+\_\+suggestions}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+suggestions()}{get\_suggestions()}}
+{\footnotesize\ttfamily void get\+\_\+suggestions (\begin{DoxyParamCaption}\item[{string}]{query }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_a856447ae8050c9b4d3c1f946307c54b9}{}\label{dictionary_8cpp_a856447ae8050c9b4d3c1f946307c54b9} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!getwords@{getwords}}
+\index{getwords@{getwords}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{getwords()}{getwords()}}
+{\footnotesize\ttfamily void getwords (\begin{DoxyParamCaption}\item[{string}]{line,  }\item[{string}]{words\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_a8f275d2dcbc468ff3af350d9a88a57e0}{}\label{dictionary_8cpp_a8f275d2dcbc468ff3af350d9a88a57e0} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!make\+\_\+dictionary\+\_\+original\+\_\+words@{make\+\_\+dictionary\+\_\+original\+\_\+words}}
+\index{make\+\_\+dictionary\+\_\+original\+\_\+words@{make\+\_\+dictionary\+\_\+original\+\_\+words}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{make\+\_\+dictionary\+\_\+original\+\_\+words()}{make\_dictionary\_original\_words()}}
+{\footnotesize\ttfamily void make\+\_\+dictionary\+\_\+original\+\_\+words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_acf2143f8dd74c98984bb9b683bbde956}{}\label{dictionary_8cpp_acf2143f8dd74c98984bb9b683bbde956} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!make\+\_\+dictionary\+\_\+stemmed\+\_\+words@{make\+\_\+dictionary\+\_\+stemmed\+\_\+words}}
+\index{make\+\_\+dictionary\+\_\+stemmed\+\_\+words@{make\+\_\+dictionary\+\_\+stemmed\+\_\+words}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{make\+\_\+dictionary\+\_\+stemmed\+\_\+words()}{make\_dictionary\_stemmed\_words()}}
+{\footnotesize\ttfamily void make\+\_\+dictionary\+\_\+stemmed\+\_\+words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_a9df82f7ca67d016bd9719463d65f4a66}{}\label{dictionary_8cpp_a9df82f7ca67d016bd9719463d65f4a66} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!orgerr@{orgerr}}
+\index{orgerr@{orgerr}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{orgerr()}{orgerr()}}
+{\footnotesize\ttfamily int orgerr (\begin{DoxyParamCaption}\item[{string}]{k }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_ad727cb6b3ca06b9173bc40df3fc21706}{}\label{dictionary_8cpp_ad727cb6b3ca06b9173bc40df3fc21706} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!stem\+\_\+the\+\_\+input\+\_\+file@{stem\+\_\+the\+\_\+input\+\_\+file}}
+\index{stem\+\_\+the\+\_\+input\+\_\+file@{stem\+\_\+the\+\_\+input\+\_\+file}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{stem\+\_\+the\+\_\+input\+\_\+file()}{stem\_the\_input\_file()}}
+{\footnotesize\ttfamily void stem\+\_\+the\+\_\+input\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_a05e1e97e5f543cefa8b19b0b5ac090b3}{}\label{dictionary_8cpp_a05e1e97e5f543cefa8b19b0b5ac090b3} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!stem\+\_\+the\+\_\+query@{stem\+\_\+the\+\_\+query}}
+\index{stem\+\_\+the\+\_\+query@{stem\+\_\+the\+\_\+query}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{stem\+\_\+the\+\_\+query()}{stem\_the\_query()}}
+{\footnotesize\ttfamily string stem\+\_\+the\+\_\+query (\begin{DoxyParamCaption}\item[{string}]{query }\end{DoxyParamCaption})}
+
+\hypertarget{dictionary_8cpp_a8a0994b8edc637d52d6a5d09e5aeda3b}{}\label{dictionary_8cpp_a8a0994b8edc637d52d6a5d09e5aeda3b} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!tf\+\_\+idf\+\_\+ranking@{tf\+\_\+idf\+\_\+ranking}}
+\index{tf\+\_\+idf\+\_\+ranking@{tf\+\_\+idf\+\_\+ranking}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{tf\+\_\+idf\+\_\+ranking()}{tf\_idf\_ranking()}}
+{\footnotesize\ttfamily void tf\+\_\+idf\+\_\+ranking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{dictionary_8cpp_a979d82a104752ab2b08fb304cf3e9fe2}{}\label{dictionary_8cpp_a979d82a104752ab2b08fb304cf3e9fe2} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!ans@{ans}}
+\index{ans@{ans}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{ans}{ans}}
+{\footnotesize\ttfamily vector$<$int$>$ ans}
+
+\hypertarget{dictionary_8cpp_a7faeb828b73155aea22f80f04e31c431}{}\label{dictionary_8cpp_a7faeb828b73155aea22f80f04e31c431} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!dict@{dict}}
+\index{dict@{dict}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{dict}{dict}}
+{\footnotesize\ttfamily map$<$string,map$<$int,int$>$ $>$ dict}
+
+\hypertarget{dictionary_8cpp_a1a67417c20ca294bb9bdc7f567055e89}{}\label{dictionary_8cpp_a1a67417c20ca294bb9bdc7f567055e89} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!dist@{dist}}
+\index{dist@{dist}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{dist}{dist}}
+{\footnotesize\ttfamily pair$<$int,string$>$ dist\mbox{[}10\mbox{]}\mbox{[}200000\mbox{]}}
+
+\hypertarget{dictionary_8cpp_a5f3ed060f31a8e67afc3a2bbe7111b1f}{}\label{dictionary_8cpp_a5f3ed060f31a8e67afc3a2bbe7111b1f} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!distinct\+\_\+terms@{distinct\+\_\+terms}}
+\index{distinct\+\_\+terms@{distinct\+\_\+terms}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{distinct\+\_\+terms}{distinct\_terms}}
+{\footnotesize\ttfamily string distinct\+\_\+terms\mbox{[}100000\mbox{]}}
+
+\hypertarget{dictionary_8cpp_a245e1b893b727f3a54602e22dc431668}{}\label{dictionary_8cpp_a245e1b893b727f3a54602e22dc431668} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!doc@{doc}}
+\index{doc@{doc}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{doc}{doc}}
+{\footnotesize\ttfamily struct \hyperlink{structnode}{node} doc\mbox{[}1000000\mbox{]}}
+
+\hypertarget{dictionary_8cpp_aeffd2cecd3d2d33547a68ad5221d193c}{}\label{dictionary_8cpp_aeffd2cecd3d2d33547a68ad5221d193c} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!doc\+\_\+ans@{doc\+\_\+ans}}
+\index{doc\+\_\+ans@{doc\+\_\+ans}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{doc\+\_\+ans}{doc\_ans}}
+{\footnotesize\ttfamily int doc\+\_\+ans\mbox{[}20000\mbox{]}}
+
+\hypertarget{dictionary_8cpp_ac6425beac2b9073e245dc7e1088ca8ef}{}\label{dictionary_8cpp_ac6425beac2b9073e245dc7e1088ca8ef} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!doc\+\_\+score@{doc\+\_\+score}}
+\index{doc\+\_\+score@{doc\+\_\+score}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{doc\+\_\+score}{doc\_score}}
+{\footnotesize\ttfamily double doc\+\_\+score\mbox{[}9000\mbox{]}\mbox{[}20\mbox{]}}
+
+\hypertarget{dictionary_8cpp_ad95bf3fc4f49547745530b4d7dc9712a}{}\label{dictionary_8cpp_ad95bf3fc4f49547745530b4d7dc9712a} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!docid@{docid}}
+\index{docid@{docid}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{docid}{docid}}
+{\footnotesize\ttfamily int docid}
+
+\hypertarget{dictionary_8cpp_a85c25a4eaa3e2e3fd4b4d7137ca51fc3}{}\label{dictionary_8cpp_a85c25a4eaa3e2e3fd4b4d7137ca51fc3} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!itr@{itr}}
+\index{itr@{itr}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{itr}{itr}}
+{\footnotesize\ttfamily map$<$string,map$<$int,int$>$ $>$\+::iterator itr}
+
+\hypertarget{dictionary_8cpp_ab62ad68b1732ef0d399185886945cf96}{}\label{dictionary_8cpp_ab62ad68b1732ef0d399185886945cf96} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!itr1@{itr1}}
+\index{itr1@{itr1}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{itr1}{itr1}}
+{\footnotesize\ttfamily map$<$int,int$>$\+::iterator itr1}
+
+\hypertarget{dictionary_8cpp_af80b58eff2f128843cb420b10fe56b82}{}\label{dictionary_8cpp_af80b58eff2f128843cb420b10fe56b82} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!itr2@{itr2}}
+\index{itr2@{itr2}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{itr2}{itr2}}
+{\footnotesize\ttfamily map$<$int,int$>$\+::iterator itr2}
+
+\hypertarget{dictionary_8cpp_abf0dcd0d74ec1efb272ae6883f212667}{}\label{dictionary_8cpp_abf0dcd0d74ec1efb272ae6883f212667} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!itrr@{itrr}}
+\index{itrr@{itrr}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{itrr}{itrr}}
+{\footnotesize\ttfamily map$<$string,map$<$int,int$>$ $>$\+::iterator itrr}
+
+\hypertarget{dictionary_8cpp_aa0996c94be9cea8b36ad5b45491ffa04}{}\label{dictionary_8cpp_aa0996c94be9cea8b36ad5b45491ffa04} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!orgdict@{orgdict}}
+\index{orgdict@{orgdict}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{orgdict}{orgdict}}
+{\footnotesize\ttfamily map$<$string,map$<$int,int$>$ $>$ orgdict}
+
+\hypertarget{dictionary_8cpp_a83ff2fe2ecd7287af5b47fd76c075b9f}{}\label{dictionary_8cpp_a83ff2fe2ecd7287af5b47fd76c075b9f} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!orgdoc@{orgdoc}}
+\index{orgdoc@{orgdoc}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{orgdoc}{orgdoc}}
+{\footnotesize\ttfamily struct \hyperlink{structnode}{node} orgdoc\mbox{[}100000\mbox{]}}
+
+\hypertarget{dictionary_8cpp_ae77dbdc6c0981f6d3d8a4af1b1586fcc}{}\label{dictionary_8cpp_ae77dbdc6c0981f6d3d8a4af1b1586fcc} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!p@{p}}
+\index{p@{p}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily pair$<$double,int$>$ p\mbox{[}20000\mbox{]}}
+
+\hypertarget{dictionary_8cpp_a90261c48ac72491fc8eb0ecaf38fedad}{}\label{dictionary_8cpp_a90261c48ac72491fc8eb0ecaf38fedad} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!query\+\_\+score@{query\+\_\+score}}
+\index{query\+\_\+score@{query\+\_\+score}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{query\+\_\+score}{query\_score}}
+{\footnotesize\ttfamily double query\+\_\+score\mbox{[}200\mbox{]}}
+
+\hypertarget{dictionary_8cpp_aff00d28495a02022481432203029bbe1}{}\label{dictionary_8cpp_aff00d28495a02022481432203029bbe1} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!query\+\_\+terms@{query\+\_\+terms}}
+\index{query\+\_\+terms@{query\+\_\+terms}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{query\+\_\+terms}{query\_terms}}
+{\footnotesize\ttfamily map$<$string,int$>$ query\+\_\+terms}
+
+\hypertarget{dictionary_8cpp_aaf40b01a1e39c61528ec1d7e7e10d35b}{}\label{dictionary_8cpp_aaf40b01a1e39c61528ec1d7e7e10d35b} 
+\index{dictionary.\+cpp@{dictionary.\+cpp}!query\+\_\+tokens@{query\+\_\+tokens}}
+\index{query\+\_\+tokens@{query\+\_\+tokens}!dictionary.\+cpp@{dictionary.\+cpp}}
+\subsubsection{\texorpdfstring{query\+\_\+tokens}{query\_tokens}}
+{\footnotesize\ttfamily string query\+\_\+tokens\mbox{[}3000\mbox{]}}
+
